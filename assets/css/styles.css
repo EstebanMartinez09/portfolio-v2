@@ -173,12 +173,14 @@ p {
 .header__nav {
 
     padding: 20px;
+
     display: flex;
+
     height: 70px;
 
     justify-content: space-between;
-    align-items: center;
 
+    /* align-items: center; */
 }
 
 .menu__list {
@@ -194,14 +196,12 @@ p {
         position: absolute;
         top: 0;
         right: 0;
-        left: -100%;
+        right: -100%;
         width: 80%;
         height: 100vh;
         padding: 20px;
-        background-color: #090979de;
-        backdrop-filter: blur(20px);
-        box-shadow: 2px 1px 5px 1px #c501e2;
-        transition: left .3s ease-in-out;
+        background-color: var(--bg);
+        transition: right .4s ease-in-out;
 
     }
 
@@ -222,8 +222,9 @@ p {
         border-radius: 10px;
         text-transform: uppercase;
         transition: .3s;
-
+ 
     }
+
 
     .list__link:hover {
 
@@ -231,7 +232,7 @@ p {
 
     }
 
-    .btn__close {
+    .btn--close {
 
         position: absolute;
         top: 20px;
@@ -239,20 +240,20 @@ p {
 
     }
 
-    .show__menu {
+    .show--menu {
 
-        left: 0;
+        right: 0;
 
     }
 
 }
 
- /* hero */
+/* hero */
 
- .hero {
+.hero {
 
     height: 100vh;
-    background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,10 +428,16 @@ p {
 
 /* Proyectos */
 
+.proyectos {
+
+    background-color: #020024;
+
+}
+
 .proyectos .container {
 
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 
@@ -453,7 +460,7 @@ p {
     height: 150px;
     overflow: hidden;
     border-radius: 1rem;
-    
+
 }
 
 .proyect__img img {
@@ -482,10 +489,10 @@ p {
 
 .text__info p {
 
-    margin:0;
+    margin: 0;
 }
 
-.tecnologia__img{
+.tecnologia__img {
 
     width: 100%;
     padding: 8px;
@@ -493,11 +500,15 @@ p {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
+
 }
 
-.img__item{
+
+.img__item {
 
     width: 35px;
+    transition: .3s;
+
 
 }
 
@@ -507,6 +518,12 @@ p {
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+
+}
+
+.img__item:hover {
+
+    transform: scale(1.2);
 
 }
 

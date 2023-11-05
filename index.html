@@ -17,9 +17,9 @@
 
             <a href="#" class="logo">Esteban</a>
 
-            <div class="header__menu ">
+            <div class="header__menu show--menu">
 
-                <button class="btn__header btn__close">
+                <button class="btn__header btn--close">
 
                     <i class='bx bx-x'></i>
 
@@ -51,7 +51,7 @@
 
             </div>
 
-            <button id="btnOpen" class="btn__header btn__open">
+            <button  class="btn__header btn--open">
 
                 <i class='bx bx-menu' style='color:#ffffff'></i>
 
@@ -63,7 +63,7 @@
 
     <main class="main">
 
-        <section class="hero">
+        <section class="hero" id="inicio">
 
             <div class="container hero">
 
@@ -89,7 +89,7 @@
 
         </section>
 
-        <section class="section sobre__mi">
+        <section class="section sobre__mi" id="sobre_mi">
 
             <div class="container ">
 
@@ -107,7 +107,7 @@
 
         </section>
 
-        <section class="section habilidades">
+        <section class="section habilidades" id="habilidades">
 
             <div class="container habilidades">
 
@@ -173,7 +173,7 @@
 
         </section>
 
-        <section class="section proyectos">
+        <section class="section proyectos" id="proyectos">
 
             <h2 class="title__section">Proyectos<span class="span__dot">.</span></h2>
 
@@ -344,6 +344,7 @@
 
                         </div>
 
+
                         <div class="img__item">
 
                             <img src="./assets/imgs/js.png" alt="">
@@ -373,7 +374,7 @@
 
         </section>
 
-        <section class="section contacto">
+        <section class="section contacto" id="contacto">
 
             <div class="container">
 
@@ -385,19 +386,19 @@
 
                     <div class="label__imput">
                         <label for="nombre"><i class='bx bxs-user'></i></label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" name="name" id="name" placeholder="Nombre">
                     </div>
 
 
                     <div class="label__imput">
                         <label for="telefono"><i class='bx bxs-phone' style='color:#ffffff'></i></label>
-                        <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+                        <input type="tel" name="tel" id="telefono" placeholder="Telefono">
                     </div>
 
 
                     <div class="label__imput">
                         <label for="correo"><i class='bx bxs-envelope' style='color:#ffffff'></i></label>
-                        <input type="email" name="correo" id="correo" placeholder="Correo">
+                        <input type="email" name="email" id="email" placeholder="Correo">
                     </div>
 
 
@@ -430,6 +431,8 @@
         <p class="footer__copy">&copy; 2023</p>
 
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 
 </body>
 
