@@ -5,6 +5,7 @@
 
     --text: #8bacda;
     --bg: #0d192b;
+    --bg-v2: #0d192bf8;
     --Cyan: hsl(178, 100%, 50%);
     --Verydarkbluemain: #0d192b;
     --Verydarkbluemain_v2: hsla(216, 54%, 11%, 0.945);
@@ -200,7 +201,7 @@ p {
         width: 80%;
         height: 100vh;
         padding: 20px;
-        background-color: var(--bg);
+        background-color: var(--bg-v2);
         transition: right .4s ease-in-out;
 
     }
