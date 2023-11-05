@@ -174,14 +174,11 @@ p {
 .header__nav {
 
     padding: 20px;
-
     display: flex;
-
     height: 70px;
-
     justify-content: space-between;
+    align-items: center;
 
-    /* align-items: center; */
 }
 
 .menu__list {
@@ -633,4 +630,15 @@ p {
     color: var(--White);
     margin: 0;
 
+}
+
+.progress {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #c501e2;
+    z-index: 101;
 }
