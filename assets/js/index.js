@@ -16,6 +16,18 @@ headerNav.addEventListener('click', function (e) {
 
     }
 
+    if (e.target.closest('.list__item')) {
+
+        menu.classList.remove('show--menu')
+
+    }
+
+})
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        menu.classList.remove('show--menu')
+    }
 })
 
 
