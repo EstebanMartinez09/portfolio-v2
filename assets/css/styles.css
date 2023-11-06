@@ -672,6 +672,27 @@ p {
 
 }
 
+.footer__text {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.footer__text div {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.footer__img{
+
+    width: 18px;
+}
+
+
 /* barra superior progreso */
 
 .progress {
@@ -697,7 +718,7 @@ p {
 
     position: fixed;
     bottom: 40px;
-    right: 20px;
+    right: 17px;
 
 }
 
@@ -718,6 +739,12 @@ p {
     border-radius: 50%;
     box-shadow: #09f 0px 0px 10px ;
     transition: all .3s ease;
+
+}
+
+.btn__plus .plus{
+
+    transition: .3s;
 
 }
 
@@ -757,7 +784,7 @@ p {
 
 }
 
-#btn--mas:checked~ .btn__plus {
+#btn--mas:checked~ .btn__plus .plus {
 
     transform: rotate(45deg);
 
