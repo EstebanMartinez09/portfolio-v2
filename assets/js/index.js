@@ -5,6 +5,8 @@ const html = document.documentElement
 const progress = document.querySelector('.progress')
 const form = document.querySelector('#form')
 
+// Función de menú desplegable 
+
 headerNav.addEventListener('click', function (e) {
 
     if (e.target.closest('.btn--open')) {
@@ -27,6 +29,8 @@ headerNav.addEventListener('click', function (e) {
 
 })
 
+// Función de menú desplegable con tecla escape 
+
 document.addEventListener('keydown', function (e) {
 
     if (e.key === 'Escape') {
@@ -36,6 +40,8 @@ document.addEventListener('keydown', function (e) {
     }
 
 })
+
+// Función de barra de carga con scroll
 
 window.addEventListener('scroll', function (e) {
     
