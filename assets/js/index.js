@@ -27,8 +27,6 @@ headerNav.addEventListener('click', function (e) {
 
         const links  = document.querySelectorAll('.list__link')
 
-        console.log(links)
-
         for (const link of links) {
 
             link.classList.remove('active')

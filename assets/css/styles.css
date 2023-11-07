@@ -131,7 +131,7 @@ p {
 
 .section {
 
-    padding: 40px 0 20px;
+    padding: 60px 0 20px;
 
 }
 
@@ -178,7 +178,7 @@ p {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: transparent;
+    background-color: #020024a5;
     backdrop-filter: blur(10px);
     z-index: 100;
 
@@ -221,11 +221,12 @@ p {
 
     display: flex;
 
+    align-items: baseline;
 }
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .header__menu {
 
@@ -264,7 +265,7 @@ p {
     .list__link.active {
 
         color: var(--Cyan);
-    
+
     }
 
 
@@ -295,29 +296,39 @@ p {
 
 .hero {
 
-    height: 100vh;
-    background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+height: 100vh;
 
+background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
+
+display: flex;
+
+align-items: center;
 }
 
 .hero .container {
 
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .hero__img {
 
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
-    border-radius: 1rem;
+display: block;
 
+display: block;
+
+width: 250px;
+
+height: 250px;
+
+margin-bottom: 20px;
+
+border-radius: 1rem;
 }
+
 
 .hero__img img {
 
@@ -383,11 +394,7 @@ p {
 
 .sobre__mi {
 
-    background: linear-gradient(#0000006a, #0000006a), url('https://th.bing.com/th/id/R.15ad9c02a6e35f76ccf58ccb37450b2e?rik=7z7dpZ2gH5Nlkg&pid=ImgRaw&r=0');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #020024;
 
 }
 
@@ -492,7 +499,7 @@ p {
 
 .proyect__card {
 
-    max-width: 350px;
+    max-width: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -697,7 +704,7 @@ p {
 
 }
 
-.footer__img{
+.footer__img {
 
     width: 18px;
 }
@@ -742,18 +749,18 @@ p {
             #9500ff,
             #09f,
             #00ddff);
-    color: #111 ;
+    color: #111;
     width: 45px;
     height: 45px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: #09f 0px 0px 10px ;
+    box-shadow: #09f 0px 0px 10px;
     transition: all .3s ease;
 
 }
 
-.btn__plus .plus{
+.btn__plus .plus {
 
     transition: .3s;
 
@@ -779,7 +786,7 @@ p {
 
 }
 
-#btn--mas:checked~ .redes a{
+#btn--mas:checked~.redes a {
 
     margin-bottom: 10px;
     opacity: 1;
@@ -795,43 +802,138 @@ p {
 
 }
 
-#btn--mas:checked~ .btn__plus .plus {
+#btn--mas:checked~.btn__plus .plus {
 
     transform: rotate(45deg);
 
 }
 
-@media (min-width: 768px){
+/* tablets */
 
-.btn__header {
-    display: none;
+@media (min-width: 767px) {
+
+    .btn__header{
+
+        display: none;
+
+    }
+
+    .header__nav {
+
+        height: 90px;
+
+    }
+
+    .menu__list {
+
+        gap: 1rem;
+
+    }
+
+    .list__link {
+
+        padding: 3px;
+        color: var(--White);
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: .3s;
+
+    }
+
+    .list__link.active {
+
+        color: var(--Cyan);
+
+    }
+
+
+    .list__link:hover {
+
+        color: var(--Cyan);
+
+    }
+
+    .cont__mas {
+
+        position: fixed;
+        bottom: 80px;
+        right: 80px;
+        z-index: 106;
+        transform: scale(1.2);
+    
+    }
+
+    .hero{
+
+        max-height: 68vh;
+
+    }
+
+    .hero .container {
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .hero__info {
+
+        background-color: #11111152;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 18px;
+
+    }
+
+    .hero__title {
+
+        font-size: 35px;
+        max-width: 320px;
+
+    }
+
+    .hero .hero__info p {
+
+        color: var(--White);
+    }
+
+    .sobre__mi .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        gap: 1rem;
+        font-size: 18px;
+
+    }
+
+    .sobre__mi .container p {
+
+        max-width: 550px;
+        margin: 0;
+    }
+
+    .title__section {
+
+        font-size: 27px;
+        
+    }
+
 }
 
-.list__link {
+/* Desktops */
 
-    padding: 3px;
-    color: var(--White);
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 10px;
-    text-transform: uppercase;
-    transition: .3s;
+@media (min-width: 1024px){
 
-}
+    .header__nav {
 
-.list__link.active {
+        justify-content: space-around;
 
-    color: var(--Cyan);
-
-}
-
-
-.list__link:hover {
-
-    color: var(--Cyan);
-
-}
-
-
+    }
 
 }
