@@ -35,6 +35,7 @@ html {
     line-height: 1.5;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -222,6 +223,8 @@ p {
 
 }
 
+
+
 @media (max-width: 768px) {
 
     .header__menu {
@@ -258,12 +261,19 @@ p {
 
     }
 
+    .list__link.active {
+
+        color: var(--Cyan);
+    
+    }
+
 
     .list__link:hover {
 
         color: var(--Cyan);
 
     }
+
 
     .btn--close {
 
@@ -719,6 +729,7 @@ p {
     position: fixed;
     bottom: 40px;
     right: 17px;
+    z-index: 106;
 
 }
 
@@ -787,5 +798,40 @@ p {
 #btn--mas:checked~ .btn__plus .plus {
 
     transform: rotate(45deg);
+
+}
+
+@media (min-width: 768px){
+
+.btn__header {
+    display: none;
+}
+
+.list__link {
+
+    padding: 3px;
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+
+.list__link.active {
+
+    color: var(--Cyan);
+
+}
+
+
+.list__link:hover {
+
+    color: var(--Cyan);
+
+}
+
+
 
 }

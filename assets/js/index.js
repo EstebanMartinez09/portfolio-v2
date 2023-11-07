@@ -25,6 +25,18 @@ headerNav.addEventListener('click', function (e) {
 
         menu.classList.remove('show--menu')
 
+        const links  = document.querySelectorAll('.list__link')
+
+        console.log(links)
+
+        for (const link of links) {
+
+            link.classList.remove('active')
+            
+        }
+
+        e.target.classList.add('active')
+
     }
 
 })
