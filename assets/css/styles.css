@@ -220,13 +220,13 @@ p {
 .menu__list {
 
     display: flex;
-
+    /* justify-content: center; */
     align-items: baseline;
 }
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 810px) {
 
     .header__menu {
 
@@ -296,13 +296,13 @@ p {
 
 .hero {
 
-height: 100vh;
+    height: 100vh;
 
-background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
+    background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
 
-display: flex;
+    display: flex;
 
-align-items: center;
+    align-items: center;
 }
 
 .hero .container {
@@ -316,17 +316,12 @@ align-items: center;
 
 .hero__img {
 
-display: block;
-
-display: block;
-
-width: 250px;
-
-height: 250px;
-
-margin-bottom: 20px;
-
-border-radius: 1rem;
+    display: block;
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 1rem;
 }
 
 
@@ -582,6 +577,86 @@ border-radius: 1rem;
 
 }
 
+/* testimonios/reviews */
+
+.reviews__bg {
+
+    background-image: linear-gradient(150deg,
+            #9500ff,
+            #09f,
+            #00ddff);
+    border-radius: 12px 2rem 12px 2rem;
+    padding: 8PX;
+
+}
+
+.reviews__item {
+
+    background-color: #111;
+    padding: 20px 45px;
+    border-radius: 12px 2rem 12px 2rem;
+
+}
+
+.reviews__head {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.reviews__tag{
+
+    background-image: linear-gradient(150deg,
+            #9500ff,
+            #09f,
+            #00ddff);
+    font-size: 18px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+
+}
+
+.reviews__name {
+
+    margin: 0;
+    color: var(--White);
+
+}
+
+.reviews__img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+
+.swiper {
+    max-width: 500px;
+    height: auto;
+    padding: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+
 
 /* contacto*/
 
@@ -808,11 +883,12 @@ border-radius: 1rem;
 
 }
 
+
 /* tablets */
 
-@media (min-width: 767px) {
+@media (min-width: 810px) {
 
-    .btn__header{
+    .btn__header {
 
         display: none;
 
@@ -862,10 +938,10 @@ border-radius: 1rem;
         right: 80px;
         z-index: 106;
         transform: scale(1.2);
-    
+
     }
 
-    .hero{
+    .hero {
 
         max-height: 68vh;
 
@@ -921,14 +997,14 @@ border-radius: 1rem;
     .title__section {
 
         font-size: 27px;
-        
+
     }
 
 }
 
 /* Desktops */
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
     .header__nav {
 

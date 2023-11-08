@@ -71,5 +71,20 @@ form.addEventListener('submit', function (e) {
 
 })
 
+// swiper
+
+const swiper = new Swiper('.comentarios .swiper', {
+    
+    effect: "flip",
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+  });
 
 
