@@ -90,15 +90,15 @@ const swiper = new Swiper('.comentarios .swiper', {
 const SR = ScrollReveal()
 
 SR.reveal('.hero__img', {
-    duration: 1300,
+    duration: 1200,
     origin: 'left',
     distance: '250px',
     reset: true
 })
 
 SR.reveal('.hero__info', {
-    duration: 1300,
-    origin: 'right',
+    duration: 1350,
+    origin: 'left',
     distance: '250px',
     reset: true
 })
