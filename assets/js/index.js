@@ -87,4 +87,40 @@ const swiper = new Swiper('.comentarios .swiper', {
   
   });
 
+const SR = ScrollReveal()
+
+SR.reveal('.hero__img', {
+    duration: 1300,
+    origin: 'left',
+    distance: '250px',
+    reset: true
+})
+
+SR.reveal('.hero__info', {
+    duration: 1300,
+    origin: 'right',
+    distance: '250px',
+    reset: true
+})
+
+SR.reveal('.title__section', {
+    duration: 1100,
+    origin: 'left',
+    distance: '250px',
+    reset: true
+})
+
+SR.reveal('.swiper', {
+    duration: 1100,
+    origin: 'right',
+    distance: '250px',
+    reset: true
+})
+
+SR.reveal('.formulario', {
+    duration: 1100,
+    origin: 'left',
+    distance: '250px',
+    reset: true
+})
 
