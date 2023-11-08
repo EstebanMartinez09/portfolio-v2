@@ -110,12 +110,12 @@ SR.reveal('.title__section', {
     reset: true
 })
 
-SR.reveal('.swiper', {
-    duration: 1100,
-    origin: 'right',
-    distance: '250px',
-    reset: true
-})
+// SR.reveal('.swiper', {
+//     duration: 1100,
+//     origin: 'right',
+//     distance: '250px',
+//     reset: true
+// })
 
 SR.reveal('.formulario', {
     duration: 1100,
