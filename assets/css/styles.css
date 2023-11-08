@@ -297,11 +297,8 @@ p {
 .hero {
 
     height: 100vh;
-
     background-image: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 70%);
-
     display: flex;
-
     align-items: center;
 }
 
@@ -366,24 +363,23 @@ p {
 
 }
 
-.btn__cv {
+.hero__info button a {
 
-    padding: 10px;
-    border-radius: 1rem 3px 1rem 3px;
-    color: var(--White);
-    text-transform: uppercase;
-    background: var(--Softblue);
+    background-color: #111;
+    padding: 10px 24px;
+    border-radius: 6px;
     transition: .3s;
 
-}
-
-.btn__cv:hover {
-
-    transform: scale(1.1);
-    background: #c501e2;
     color: var(--White);
 
 }
+
+.hero__info button:hover a {
+
+    background-color: transparent;
+
+}
+
 
 /* Acerca de mí section */
 
