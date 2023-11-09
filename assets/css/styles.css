@@ -3,8 +3,6 @@
 
 :root {
 
-    --text: #8bacda;
-    --bg: #0d192b;
     --bg-v2: #0d192bf8;
     --Cyan: hsl(178, 100%, 50%);
     --Verydarkbluemain: #0d192b;
@@ -13,6 +11,7 @@
     --White: hsl(0, 0%, 100%);
     --Softblue: #8bacda;
     --Cyanbanner: hsl(178, 100%, 50%, 0.5)
+    
 }
 
 ff {
@@ -369,7 +368,6 @@ p {
     padding: 10px 24px;
     border-radius: 6px;
     transition: .3s;
-
     color: var(--White);
 
 }
